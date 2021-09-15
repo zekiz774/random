@@ -15,7 +15,7 @@ public class tools {
 
   public int position(int[] a, int searched){
 
-    int pos;
+    int pos=1;
     //foreach loop
     for (int i : a) { 
       if (a[i]==searched){

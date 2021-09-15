@@ -11,7 +11,6 @@ public class Main {
         a=tools.ranArr(a);
         position=tools.position(a, searched);
         System.out.println(position);
+        System.out.println(Arrays.toString(a));
     }
-    
-
 }
