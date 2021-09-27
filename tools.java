@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 
 public class tools {    
   public int[] ranArr(int[] a){
@@ -13,6 +15,15 @@ public class tools {
      return a;
   }
 
+
+  public int[] ranArr2(int[] a){
+        for(int i=0; i<20; i++){
+            a[i]=(int)(Math.random()*20);
+            System.out.print(a[i]+",");
+        }
+     return a;
+  }
+
   public int position(int[] a, int searched){
 
     int pos=1;
@@ -24,5 +35,16 @@ public class tools {
       }
     }
     return pos;
+  }
+
+  public List<Integer> search2(int[] a, int searched){
+    List<Integer> b = new ArrayList<Integer>();
+    for (int i=0; i<20; i++) { 
+      if (a[i]==searched){
+        b.add(i);
+        
+      }
+    }
+    return b;
   }
 }
